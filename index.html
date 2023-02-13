@@ -3,25 +3,51 @@
 <head>
   <style>
     .menu {
-      width: 300px;
-      float: center;
+      width: 200px;
+      float: left;
     }
-    .menu1 {
+    .menu a {
       display: block;
-      padding: 10px;
-      border-bottom: 5px solid red;
+      padding: 8px;
       text-decoration: none;
       color: black;
     }
-    .menu1:hover {
-      background-color:blueviolet;
+    .submenu {
+      display: none;
+    }
+    .menu a:hover + .submenu, .submenu:hover {
+      display: block;
     }
   </style>
 </head>
 <body>
   <div class="menu">
     <a href="#">Inicio</a>
-    <a href="#">Informació</a>
+    <a href="#">Acerca de</a>
+    <a href="#">Contacto</a>
+    <a href="#">Blog</a>
+    <div class="submenu">
+      <a href="#">Entrada 1</a>
+      <a href="#">Entrada 2</a>
+      <a href="#">Entrada 3</a>
+    </div>
   </div>
 </body>
 </html>
+
+.menu {
+  width: 200px;
+  float: left;
+}
+.menu a {
+  display: block;
+  padding: 8px;
+  text-decoration: none;
+  color: black;
+}
+.submenu {
+  display: none;
+}
+.menu a:hover + .submenu, .submenu:hover {
+  display: block;
+}
